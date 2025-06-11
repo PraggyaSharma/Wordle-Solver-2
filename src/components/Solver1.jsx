@@ -170,7 +170,6 @@ const Solver1 = () => {
   const handleDelete = () => {
     // if (currentRow >= 6) return;
     const newGrid = cloneGrid(grid);
-    console.log(currentCol);
     if(currentCol == 0){
       newGrid[currentRow][currentCol].letter = '';
       setGrid(newGrid);
