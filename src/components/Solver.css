@@ -1,0 +1,151 @@
+body{
+    margin: 0;
+    padding :0;
+    font-family: 'Clear Sans', 'Helvetica Nue', Arial, sans-serif;
+    animation: fadeInBackground 1s ease;
+    background-color: #121213;
+}
+
+
+
+@keyframes fadeInBackground {
+    from {background-color: black;}
+    to {background-color: #121213;}
+}
+.container{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+h1{
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+h2{
+    display: none;
+}
+
+
+.game{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    margin-top: 20px;
+    background: transparent;
+}
+
+.left-panel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid{
+    display: flex;
+    flex-direction: column;
+}
+
+.row{
+    display: flex;
+}
+.cell{
+    width: 62px;
+    height: 62px;
+    margin: 3px;
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 62px;
+    border: 2px solid black;
+    color: black;
+    border-radius: 4px;
+    user-select: none;
+}
+
+.keyboard{
+    margin-top: 20px;
+
+}
+
+.keyboard-row{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8px;
+}
+
+.keyboard-key{
+    border: none;
+    margin: 4px;
+    height: 58px;
+    min-width: 43px;
+    padding: 0 10px;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    background-color: #3a3a3c;
+    color: white;
+}
+.keyboard-key:hover{
+    background-color: #565758;
+}
+
+.right-panel{
+    color: #121213
+}
+
+.right-panel p{
+    color: white;
+}
+
+.right-panel h3{
+    margin-bottom: 10px;
+    color: white;
+}
+
+.suggestion-list{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color:gray;
+}
+.suggestion-list li{
+    margin: 8px;
+    font-size: 18px;
+    color: gray;
+}
+
+.active{
+    border: 2px solid #d7dadc;
+    box-shadow: 0 0 6px 2px #aedbf9;
+}
+
+.green{
+    background-color: #6aaa64;
+    border-color: #6aaa64;
+    color: #121213;
+}
+
+.yellow{
+    background-color: #c9b458;
+    border-color: #c9b458;
+    color: #121213;
+}
+
+.gray{
+    background-color: #3a3a3c;
+    border-color: #3a3a3c;
+    color: white;
+
+}
+
