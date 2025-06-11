@@ -168,11 +168,17 @@ const Solver1 = () => {
   
 
   const handleDelete = () => {
-    if (currentRow >= 6) return;
+    // if (currentRow >= 6) return;
     const newGrid = cloneGrid(grid);
-    if (currentCol > 0) {
+    console.log(currentCol);
+    if(currentCol == 0){
+      newGrid[currentRow][currentCol].letter = '';
+      setGrid(newGrid);
+      setCurrentWord(prev => prev.slice(0, -1));
+    }
+    else if (currentCol > 0) {
       const col = currentCol - 1;
-      newGrid[currentRow][col].letter = '';
+      newGrid[currentRow][currentCol].letter = '';
       setGrid(newGrid);
       setCurrentCol(col);
       setCurrentWord(prev => prev.slice(0, -1));
